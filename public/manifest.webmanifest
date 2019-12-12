@@ -1,0 +1,13 @@
+{
+    "name" : "Budget Tracker Progressive Web Application",
+    "short_name" : "Budget Tracker PWA",
+    "icons" : [
+        {
+
+        }
+    ],
+    "theme_color" : "#fff",
+    "background_color" : "#fff",
+    "start_url" : "/",
+    "display" : "standalone"
+}

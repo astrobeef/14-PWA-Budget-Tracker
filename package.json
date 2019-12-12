@@ -1,0 +1,27 @@
+{
+  "name": "14-pwa-budget-tracker",
+  "version": "1.0.0",
+  "description": "A Progressive web application which can be ran online/offline, downloaded as an app, and uses service workers",
+  "main": "server.js",
+  "directories": {
+    "example": "example"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/astrobeef/14-PWA-Budget-Tracker.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/astrobeef/14-PWA-Budget-Tracker/issues"
+  },
+  "homepage": "https://github.com/astrobeef/14-PWA-Budget-Tracker#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.8.0"
+  }
+}

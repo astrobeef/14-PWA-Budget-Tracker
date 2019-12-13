@@ -3,8 +3,10 @@ console.log("Hello from your service worker!");
 //Set up a reference for all files which will be cached
 const FILES_TO_CACHE = [
     "/",
-    "app.js",
+    "db.js",
     "/index.html",
+    "/index.js",
+    "/style.css",
     "/manifest.webmanifest",
     "/favicon.ico",
     "/assets/images/icons/icon-72x72.png",

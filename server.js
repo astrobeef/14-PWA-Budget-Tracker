@@ -1,4 +1,5 @@
 const express = require("express");
+const mongoose = require("mongoose");
 const mongojs = require("mongojs");
 const logger = require("morgan");
 const path = require("path");
@@ -12,6 +13,11 @@ app.use(express.json());
 
 app.use(express.static("public"));
 
+mongoose.connect(process.env.MONGODB_URI || "mongodb://localhost/budget", {
+  useNewUrlParser: true,
+  useFindAndModify: false
+});
+
 const databaseUrl = process.env.MONGODB_URI || "budget";
 const collections = ["budget"];
 
@@ -20,6 +26,9 @@ const db = mongojs(databaseUrl, collections);
 db.on("error", error => {
   console.log("Database Error:", error);
 });
+
+//Routes
+app.use(require("./routes/api.js"));
 
 const PORT = process.env.PORT || 3550;
 
